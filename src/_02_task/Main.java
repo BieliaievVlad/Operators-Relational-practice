@@ -21,7 +21,7 @@ public class Main {
                 System.out.print("STOP");
                 break;
             case "Yellow" : case "yellow" : case "YELLOW" :
-                System.out.print("%nSLOW DOWN");
+                System.out.print("SLOW DOWN");
                 break;
             case "Green" : case "green" : case "GREEN" :
                 System.out.print("PROCEED");
