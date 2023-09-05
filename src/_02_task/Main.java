@@ -17,15 +17,9 @@ public class Main {
         scan.close();
 
         switch (colour.trim()) {
-            case "Red": case "red" : case "RED" :
-                System.out.print("STOP");
-                break;
-            case "Yellow" : case "yellow" : case "YELLOW" :
-                System.out.print("SLOW DOWN");
-                break;
-            case "Green" : case "green" : case "GREEN" :
-                System.out.print("PROCEED");
-                break;
+            case "Red", "red", "RED" -> System.out.print("STOP");
+            case "Yellow", "yellow", "YELLOW" -> System.out.print("SLOW DOWN");
+            case "Green", "green", "GREEN" -> System.out.print("PROCEED");
         }
     }
 }
