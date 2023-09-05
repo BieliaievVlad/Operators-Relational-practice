@@ -17,6 +17,7 @@ public class Main {
 
         System.out.print("Enter sales amount: ");
         sales = scan.nextDouble();
+        scan.close();
 
         if (sales > 0 & sales <= salesAmount[0]) {
             payment = sales * bonusRate[0] / 100;
@@ -25,8 +26,8 @@ public class Main {
             payment = (salesAmount[0] * bonusRate[0] / 100) + ((sales - salesAmount[0]) * bonusRate[1] / 100);
             System.out.printf("%nPayment amount is, %S: %.2f.", CURRENCY, payment);
         } else {
-            payment = (salesAmount[0] * bonusRate[0] / 100) + ((salesAmount[1] - salesAmount[0]) * bonusRate[1] / 100) +
-                    ((sales - salesAmount[1]) * bonusRate[2] / 100);
+            payment = (salesAmount[0] * bonusRate[0] / 100) + ((salesAmount[1] - salesAmount[0]) * bonusRate[1] / 100)
+                    + ((sales - salesAmount[1]) * bonusRate[2] / 100);
             System.out.printf("%nPayment amount is, %S: %.2f.", CURRENCY, payment);
         }
 
